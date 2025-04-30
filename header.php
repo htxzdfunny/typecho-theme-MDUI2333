@@ -14,13 +14,13 @@
 		'tag' => _t('标签 %s 下的文章'),
 		'author' => _t('%s 发布的文章')
 	),'',' - '); ?><?php $this->options->title(); ?></title>
-	<link rel="dns-prefetch" href="https://fastly.jsdelivr.net" />
+	<link rel="dns-prefetch" href="https://cdn.jsdmirror.com" />
 	<?php if ($this->options->twemoji=='true'){ ?>
 	<link rel="preload" href="<?php echo asseturl('fonts/twemoji/TwemojiMozilla.ttf'); ?>" as="font" type='font/ttf' crossorigin />
 	<?php } ?>
 	<link rel="stylesheet" href="<?php echo asseturl('css/mdui.min.css'); ?>" />
 	<?php if ($this->options->highlightmode=='highlightjs'){ ?>
-	<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/highlightjs/cdn-release@9.13.0/build/styles/<?php if ($this->options->highlightstyle) echo $this->options->highlightstyle; else echo "default"?>.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/highlightjs/cdn-release@9.13.0/build/styles/<?php if ($this->options->highlightstyle) echo $this->options->highlightstyle; else echo "default"?>.min.css" />
 	<?php } else { ?>
 	<link rel="stylesheet" href="<?php echo asseturl('css/prism/'.($this->options->highlightstyle?$this->options->highlightstyle:"prism").'.min.css'); ?>" />
 	<?php } ?>
@@ -55,11 +55,11 @@
 			"HTML-CSS":{availableFonts:["TeX"]}
 		});
 	</script>
-	<script src="https://fastly.jsdelivr.net/npm/mathjax@2.7.9/unpacked/MathJax.js"></script>
+	<script src="https://cdn.jsdmirror.com/npm/mathjax@2.7.9/unpacked/MathJax.js"></script>
 	<?php } else { ?>
-	<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" />
-	<script defer src="https://fastly.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
-	<script defer src="https://fastly.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/katex@0.16.4/dist/katex.min.css" />
+	<script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.4/dist/katex.min.js"></script>
+	<script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.4/dist/contrib/auto-render.min.js"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded",function(){
 			renderMathInElement(document.getElementById("pjax-container"),{
